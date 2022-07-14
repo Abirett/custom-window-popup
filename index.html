@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Custom Confirm Window Popup - A.H. Abir</title>
+<link rel="icon" href="images/icon.png" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="btnChangeBg">Change Background</button>
+
+<script>
+document.querySelector('#btnChangeBg').addEventListener('click' , () => {
+Confirm.open({
+title: 'Background Change' ,
+message: 'Are you sure you want to change the background color?' ,
+onok: () => {
+document.body.style.backgroundColor = 'blue';
+}
+})
+});
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
